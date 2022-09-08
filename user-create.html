@@ -183,7 +183,7 @@
                             <div id="submenu-4" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pending-tasks.html"
+                                        <a class="nav-link" href="tasks-create.html"
                                         >Pending Tasks</a
                                         >
                                     </li>
@@ -195,13 +195,10 @@
                                 </ul>
                             </div>
                         </li>
-                        </li>
                     </ul>
                 </div>
             </nav>
-            </ul>
         </div>
-        </nav>
     </div>
     <!-- ============================================================== -->
     <!-- end left sidebar -->
@@ -220,7 +217,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="page-header" id="top">
-                                    <h3 class="mb-2">User Create </h3>
+                                    <h2 class="pageheader-title">User Create</h2>
                                 </div>
                             </div>
                         </div>
@@ -228,21 +225,22 @@
                         <!-- end pageheader  -->
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
-                        <!--form  -->
+                        <!-- form  -->
                         <!-- ============================================================== -->
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+
                                 <form>
                                     <div class="row">
                                         <div class="form-group col-6">
                                             <label for="firstname" class="col-form-label">First Name</label>
                                             <input id="firstname" type="text" class="form-control"
-                                                   placeholder="first-name">
+                                                   placeholder="first name">
                                         </div>
                                         <div class="form-group col-6">
                                             <label for="lastname" class="col-form-label">Last Name</label>
                                             <input id="lastname" type="text" class="form-control"
-                                                   placeholder="last-name">
+                                                   placeholder="last name">
                                         </div>
                                     </div>
                                     <div class="row">
@@ -266,12 +264,12 @@
                                         <div class="form-group col-6">
                                             <label for="repassword" class="col-form-label">Password</label>
                                             <input id="repassword" type="text" class="form-control"
-                                                   placeholder="confirm your-password">
+                                                   placeholder="confirm your password">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-6">
-                                            <lab>Gender</lab>
+                                            <label>Gender</label>
                                             <br>
                                             <label class="custom-control custom-radio custom-control-inline">
                                                 <input type="radio" name="gender" checked=""
@@ -283,6 +281,7 @@
                                                        class="custom-control-input" value="female">
                                                 <span class="custom-control-label">Female</span>
                                             </label>
+
                                         </div>
                                         <div class="form-group col-6">
                                             <label>Choose a Role</label>
@@ -298,51 +297,94 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-12">
-                                            <button class="btn btn-success float-lg-right" type="submit">Save</button>
+                                            <button class="btn btn-success float-right" type="submit">Save</button>
                                         </div>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
                         <!-- ============================================================== -->
                         <!-- end form  -->
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
-                        <!--table  -->
+                        <!-- table  -->
                         <!-- ============================================================== -->
-                        <table class="table table-striped">
-                            <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email(username)</th>
-                                <th scope="col">Gender</th>
-                                <th scope="col">Phone</th>
-                                <th scope="col">Role</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Craig Jark</td>
-                                <td>craig@cydeo.com</td>
-                                <td>Male</td>
-                                <td>2921234322</td>
-                                <td>Employee</td>
-                                <td>
-                                    <a href="#">
-                                        <button class="btn btn-warning btn-sm">Update</button>
-                                    </a>
-                                    <a href="#">
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                    </a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        ﻿
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header" id="bottom">
+                                <h2 class="pageheader-title">User List</h2>
+                            </div>
+
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email(username)</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Craig Jark</td>
+                                    <td>craig@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>2921234322</td>
+                                    <td>Employee</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dellisa Nore</th>
+                                    <td>dellisa@cydeo.com</td>
+                                    <td>Female</td>
+                                    <td>(301)1234567</td>
+                                    <td>Manager</td>
+                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>John Casy</th>
+                                    <td>john@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>(301)1234567</td>
+                                    <td>Admin</td>
+                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Mike SMith</th>
+                                    <td>mike@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>(301)1234567</td>
+                                    <td>Manager</td>
+                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Shaun Hayna</th>
+                                    <td>shaun@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>(301)1234567</td>
+                                    <td>Employee</td>
+                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end table  -->
                         <!-- ============================================================== -->
+                        <footer class="page-footer font-small blue fixed-bottom">
+                            <div class="footer-copyright text-center py-3">© 2022 Cydeo – All Rights Reserved</div>
+                        </footer>
                     </div>
                 </div>
             </div>
